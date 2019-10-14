@@ -48,6 +48,7 @@ h1 {
 
 #click-icon:active{
   transform: scale(1.1);
+  background-color: none;
 }
 
 h2 {
