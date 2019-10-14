@@ -1,0 +1,609 @@
+*{
+  margin:none;
+
+}
+
+html {
+  user-select: none;
+  cursor: url('FlexiClicker-Cursor.cur'), auto;
+  background-color: black;
+}
+
+/* Default */
+/* Title Formating */
+#title-div {
+  width: 95vw;
+  height: 10vh;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 5.8vh;
+  margin-left: 0.3vw;
+}
+
+/* Image Formating */
+#img-div {
+  height: 40vh;
+  width: 40wv;
+}
+
+#click-icon {
+  height: 30vh;
+  width: 30wv;
+  position: absolute;
+  margin-left: 1vw;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+
+#click-icon:hover{
+  cursor: pointer;
+  transform: rotate(1440deg);
+  -webkit-transform: rotate(1440deg);
+}
+
+#click-icon:active{
+  transform: scale(1.1);
+}
+
+h2 {
+  color: #4682e2;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2vw;
+  position: relative;
+  text-align: left;
+  margin-left: 3vw;
+}
+
+/* Price Indicator */
+
+h4 {
+  color: #08a30d;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5vw;
+}
+
+/* Upgrades */
+#nbn-logo {
+  position: relative;
+  width: 6vw;
+  height: 4vh;
+}
+
+#electricity-logo {
+  position: relative;
+  width: 3vw;
+  height: 6vh;
+  margin-top: -1vh;
+}
+
+#mac-logo {
+  position: relative;
+  width: 4vw;
+  height: 6vh;
+}
+
+#code-logo {
+  position: relative;
+  width: 2vw;
+  height: 3vh;
+}
+
+#upgrade-div2 {
+  float: right;
+  height: 10vh;
+  margin-top: 0.5vh;
+}
+
+#upgrade-div1 {
+  float: right;
+  position: fixeds;
+  height: 20vh;
+  margin-top: 15.5vh;
+}
+
+h3 {
+  font-size: 5vh;
+  color: #edcb21;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+.upgrade-price {
+  font-style: italic;
+  font-size: 0.75vw;
+  color: #08a30d;
+}
+
+.upgrades {
+  color: #4682e2;
+  border: 0.4vw solid #edcb21;
+  border-radius: 1vw;
+  width: 18vw;
+  height: 24vh;
+  margin: 1vh;
+  margin-top: 1.5vh;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 2vw;
+}
+
+.upgrades:hover {
+  background-color: #404040;
+  cursor: url('FlexiClicker-Cursor2.cur'), auto;
+}
+
+.bought-formatting {
+  font-style: strong;
+  font-size: 1vw;
+  color: red;
+}
+
+.upgrade-times {
+  color: #edcb21;
+}
+
+/* Miscelaneous */
+
+/*Link1*/
+#link1 {
+  position: relative;
+  color: red;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1vw;
+}
+
+#link1-link {
+  color: #edcb21;
+  text-decoration: none;
+}
+
+#link1-link:hover {
+  color: #08a30d;
+}
+
+#link1-div {
+  position: absolute;
+  margin-top: 0vh;
+}
+
+  /* link2 */
+#link2 {
+  position: relative;
+  color: #08a30d;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1vw;
+}
+
+#link2-link {
+  color: #edcb21;
+  text-decoration: none;
+}
+
+#link2-link:hover {
+  color: red;
+}
+
+#link2-div {
+  position: absolute;
+}
+
+/* other */
+#link2-link[href*="http"], #link1-link[href*="http"]{
+    padding-right: 1.5vw;
+    background: url(FlexiClicker-ExternalLink.png) no-repeat 100% 0;
+    background-size: 1.1vw 1.1vw;
+}
+
+#Git-Hub-Link {
+  color: red;
+  text-decoration: none;
+}
+
+/* Flex box */
+/* For Tablets */
+
+@media only screen and (min-width: 475px) and (max-width: 850px) {
+    html {
+      background-color: #404040;
+    }
+
+    #title-div {
+      width: 95vw;
+      height: 15vh;
+    }
+
+    h1 {
+      color: red;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 5vh;
+      margin-left: 0.3vw;
+    }
+
+    /* Image Formating */
+    #img-div {
+      height: 30vh;
+      width: 60wv;
+    }
+
+    #click-icon {
+      height: 20vh;
+      width: 20wv;
+      margin-left: 1vw;
+      transition-duration: 0.5s;
+    }
+
+    h2 {
+      color: #4682e2;
+      font-family: 'Roboto Slab', serif;
+      font-size: 5vw;
+      position: relative;
+      text-align: left;
+      margin-left: 0.1vw;
+    }
+
+    /* Price Indicator */
+
+    h4 {
+      color: #08a30d;
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.5vw;
+    }
+
+    /* Upgrades */
+    #nbn-logo {
+      position: relative;
+      width: 6vw;
+      height: 4vh;
+    }
+
+    #electricity-logo {
+      position: relative;
+      width: 4vw;
+      height: 3vh;
+      margin-top: -1vh;
+    }
+
+    #mac-logo {
+      position: relative;
+      width: 4vw;
+      height: 3vh;
+    }
+
+    #code-logo {
+      position: relative;
+      width: 3vw;
+      height: 3vh;
+    }
+
+    #upgrade-div2 {
+      float: right;
+      height: 1vh;
+      margin-top: 16.6vh;
+    }
+
+    #upgrade-div1 {
+      float: right;
+      height: 20vh;
+      margin-top: 25vh;
+    }
+
+    h3 {
+      font-size: 3vh;
+      color: #edcb21;
+      text-align: left;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    p {
+      font-family: 'Roboto Slab', serif;
+    }
+
+    .upgrade-price {
+      font-style: italic;
+      font-size: 1.5vw;
+      color: #08a30d;
+    }
+
+    .upgrades {
+      color: #4682e2;
+      border: 0.4vw solid #edcb21;
+      border-radius: 1vw;
+      width: 25vw;
+      height: 20vh;
+      margin: 1vh;
+      margin-top: 1.5vh;
+      font-size: 2vw;
+      text-align: center;
+      padding: 2vw;
+    }
+
+    .upgrades:hover {
+      background-color: black;
+      cursor: url('FlexiClicker-Cursor2.cur'), auto;
+    }
+
+    .bought-formatting {
+      font-style: strong;
+      font-size: 1.5vw;
+      color: red;
+    }
+
+    .upgrade-times {
+      color: #edcb21;
+    }
+
+    /* Miscelaneous */
+
+    /*Link1*/
+    #link1 {
+      position: relative;
+      color: red;
+      font-family: 'Roboto Slab', serif;
+      font-size: 1vw;
+    }
+
+    #link1-link {
+      color: #edcb21;
+      text-decoration: none;
+    }
+
+    #link1-link:hover {
+      color: #08a30d;
+    }
+
+    #link1-div {
+      position: absolute;
+      bottom: 0;
+      top: 100;
+    }
+
+    /* link2 */
+    #link2 {
+      position: relative;
+      color: #08a30d;
+      font-family: 'Roboto Slab', serif;
+      font-size: 1vw;
+    }
+
+    #link2-link {
+      color: #edcb21;
+      text-decoration: none;
+    }
+
+    #link2-link:hover {
+      color: red;
+    }
+
+    #link2-div {
+      position: absolute;
+    }
+
+    /* other */
+    #link2-link[href*="http"], #link1-link[href*="http"]{
+        padding-right: 1.5vw;
+        background: url(FlexiClicker-ExternalLink.png) no-repeat 100% 0;
+        background-size: 1.1vw 1.1vw;
+    }
+
+    #percentage {
+      font-size: 1vw;
+    }
+
+    #Git-Hub-Link {
+      color: red;
+      text-decoration: none;
+    }
+}
+
+/* For Phones-Sized Screens */
+
+@media only screen and (max-width: 474px) {
+  html {
+    background-color: black;
+  }
+
+    #title-div {
+      width: 100vw;
+      height: 4vh;
+    }
+
+    h1 {
+      color: red;
+      text-align: center;
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.5vh;
+      margin-left: 0.3vw;
+    }
+
+    /* Image Formating */
+    #img-div {
+      height: 30vh;
+      width: 60wv;
+    }
+
+    #click-icon {
+      height: 15vh;
+      width: 15wv;
+      margin-left: 1vw;
+      transition-duration: 0.5s;
+    }
+
+    h2 {
+      color: #4682e2;
+      font-family: 'Roboto Slab', serif;
+      font-size: 4vw;
+      position: relative;
+      text-align: left;
+      margin-left: 0.1vw;
+    }
+
+    /* Price Indicator */
+
+    h4 {
+      color: #08a30d;
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.5vw;
+    }
+
+    /* Upgrades */
+    #nbn-logo {
+      position: relative;
+      margin-top: 2vh;
+      width: 18vw;
+      height: 6vh;
+    }
+
+    #electricity-logo {
+      position: relative;
+      margin-top: 1.5vh;
+      width: 10vw;
+      height: 6vh;
+    }
+
+    #mac-logo {
+      position: relative;
+      margin-top: 2vh;
+      width: 12vw;
+      height: 6vh;
+    }
+
+    #code-logo {
+      position: relative;
+      margin-top: 2vh;
+      width: 12vw;
+      height: 9vh;
+    }
+
+    #upgrade-div2 {
+      float: right;
+      height: 1vh;
+      margin-top: 30.6vh;
+    }
+
+    #upgrade-div1 {
+      float: right;
+      height: 20vh;
+      margin-top: 39vh;
+    }
+
+    h3 {
+      font-size: 3vh;
+      color: #edcb21;
+      text-align: left;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    p {
+      font-family: 'Roboto Slab', serif;
+    }
+
+    .upgrade-price {
+      font-style: italic;
+      font-size: 1.5vw;
+      color: #08a30d;
+    }
+
+    .upgrades {
+      color: #4682e2;
+      border: 0.4vw solid #edcb21;
+      border-radius: 1vw;
+      width: 25vw;
+      height: 20vh;
+      margin: 1vh;
+      margin-top: 1.5vh;
+      font-size: 2vw;
+      text-align: center;
+      padding: 2vw;
+    }
+
+    .upgrades:hover {
+      background-color: black;
+      cursor: url('FlexiClicker-Cursor2.cur'), auto;
+    }
+
+    .bought-formatting {
+      font-style: strong;
+      font-size: 1.5vw;
+      color: red;
+    }
+
+    .upgrade-times {
+      color: #edcb21;
+    }
+
+    /* Miscelaneous */
+
+    /*Link1*/
+    #link1 {
+      position: relative;
+      color: red;
+      font-family: 'Roboto Slab', serif;
+      font-size: 2vw;
+    }
+
+    #link1-link {
+      color: #edcb21;
+      text-decoration: none;
+    }
+
+    #link1-link:hover {
+      color: #08a30d;
+    }
+
+    #link1-div {
+      position: absolute;
+      bottom: 0;
+      top: 100;
+    }
+
+    /* link2 */
+    #link2 {
+      position: relative;
+      color: #08a30d;
+      font-family: 'Roboto Slab', serif;
+      font-size: 2vw;
+    }
+
+    #link2-link {
+      color: #edcb21;
+      text-decoration: none;
+    }
+
+    #link2-link:hover {
+      color: red;
+    }
+
+    #link2-div {
+      position: absolute;
+    }
+
+    /* other */
+    #link2-link[href*="http"], #link1-link[href*="http"]{
+      padding-right: 1.5vw;
+      background: url(FlexiClicker-ExternalLink.png) no-repeat 100% 0;
+      background-size: 1.1vw 1.1vw;
+    }
+
+    #profit-indicator {
+        width: 20vw;
+    }
+
+    #percentage {
+      font-size: 1vw;
+    }
+
+    #Git-Hub-Link {
+      color: red;
+      text-decoration: none;
+    }
+}
